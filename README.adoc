@@ -1,0 +1,12 @@
+= Spockframework and JUnit5
+
+Short example showing the combination of Spock and JUnit5 tests in one project. To be a selfcontained project, this includes a gradle and maven wrapper.
+
+The tests can be executed by running them with:
+
+. gradle +
+  `./gradlew test`
+
+. maven +
+  `./mvnw test`
+

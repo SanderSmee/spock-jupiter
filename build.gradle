@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+ext {
+    spockVersion = '1.2-RC2-groovy-2.5'
+    jupiterVersion = '5.3.0'
+}
+
+dependencies {
+    testCompile "org.spockframework:spock-core:$spockVersion"
+
+    testCompile "org.junit.jupiter:junit-jupiter-api:$jupiterVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jupiterVersion"
+    testRuntimeOnly "org.junit.vintage:junit-vintage-engine:$jupiterVersion"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+wrapper {
+    version = '4.10'
+}
