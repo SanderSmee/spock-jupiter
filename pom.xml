@@ -19,7 +19,7 @@
         <groovy.version>2.5.2</groovy.version>
         <junit-platform.version>1.2.0</junit-platform.version>
         <jupiter.version>5.2.0</jupiter.version>
-        <spock.version>1.2-RC1-groovy-2.5</spock.version>
+        <spock.version>1.2-groovy-2.5</spock.version>
     </properties>
 
     <dependencies>
